@@ -9,13 +9,13 @@
 <body>
   <ul class="navigation">
     <li>
-      <%= link_to "Overview", overview_path %>
+      <%= link_to_unless_current "Overview", overview_path %>
     </li>
     <li>
-      <%= link_to "Styling(CSS)", styling_path %>
+      <%= link_to_unless_current "Styling(CSS)", styling_path %>
     </li>
     <li>
-      <%= link_to "Markup(HTML)", markup_path %>
+      <%= link_to_unless_current "Markup(HTML)", markup_path %>
     </li>
   </ul>
 
