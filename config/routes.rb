@@ -7,6 +7,8 @@ MovitasStyleGuide::Application.routes.draw do
   get "pages/styling", :as => 'styling'
 
   get "pages/markup", :as => 'markup'
+  
+  get "pages/branding", :as => 'branding'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

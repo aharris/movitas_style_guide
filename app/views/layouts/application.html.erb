@@ -9,24 +9,36 @@
 <body>
   <header>
     <div id="header">
-      <div id="logo">
-        Movitas
+      <div class="container">
+        <div id="logo">
+          <a href="/"><img src="/images/logo.png" width="255" height="58" alt="Logo"></a>Living Style Guide
+        </div>
       </div>
-      <ul class="navigation">
-        <li>
-          <%= link_to_unless_current "Overview", overview_path %>
-        </li>
-        <li>
-          <%= link_to_unless_current "Styling(CSS)", styling_path %>
-        </li>
-        <li>
-          <%= link_to_unless_current "Markup(HTML)", markup_path %>
-        </li>
-      </ul>
-      </div>
+    </div>
   </header>
-
-<%= yield %>
+  <nav>
+    <div id="nav">
+      <div class="container">
+        <ul class="navigation">
+          <li>
+            <%= link_to_unless_current "Overview", overview_path %>
+          </li><li>
+            <%= link_to_unless_current "Branding", branding_path %>
+          </li><li>
+            <%= link_to_unless_current "Markup(HTML)", markup_path %>
+          </li><li>
+            <%= link_to_unless_current "Styling(CSS)", styling_path %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <article>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </article>
 
 </body>
 </html>

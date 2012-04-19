@@ -1,10 +1,94 @@
 @import bourbon
 @import reset
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic)
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800)
 
+//MIXINS
+@mixin clearAfter
+  &:after
+    content: "\0020"
+    display: block
+    height: 0
+    clear: both
+    overflow: hidden
+    visibility: hidden
+
+//VARIABLES
+$headerBg: #353535
+$navBg: #404040
+$headerFontSize: 2.7em
+
+//CONTENT
 body
-  background:fff
+  background: #fff
+  font-family: 'Lato', sans-serif
+  font-size: 18px
+  background: url("https://www.movitas.com/dynamicimage.aspx?id=20061")
+  font-weight: 300
+  color: #404040
+
+.container
+  max-width: 1000px
+  margin: 0 auto
+  padding: .5em
+
+.content
+  background: #FCFCFC
+  padding: 15px
+  +border-radius(10px)
+  
   
 #header
-  background: #353535
+  background: $headerBg
   border-bottom: 1px solid #4E4E4D
+  +clearAfter
+  color: #fff
+  .container
+    padding: 15px 10px
+
+#logo
+  color: #ccc
+  font-weight: 700
+  font-style: italic
+  letter-spacing: 2px
+  img
+    margin-right: 15px
+    vertical-align: text-bottom
+    @media screen and (max-width: 480px)
+      display: block
+      margin-bottom: 10px
+
+p
+  line-height: 22px
+  margin-bottom: 15px
+
+//NAV
+#nav
+  background: $navBg
+
+ul.navigation
+  padding: 10px 0
+  margin: 0
+  list-style: none
+  li
+    padding: 0 5% 0 0
+    +inline-block
+    color: #fff
+    @media screen and (max-width: 480px)
+      padding: 0 5% 10px 0
+    a
+      color: #b5c034
+      text-decoration: none
+      &:hover, &:active
+        color: #fff
+
+//HEADERS
+h1, h2, h3, h4, h5, h6
+  font-family: 'Open Sans', sans-serif
+
+h1
+  text-align: center
+  font-size: $headerFontSize
+  font-weight: 700
+  margin: .5em
 
