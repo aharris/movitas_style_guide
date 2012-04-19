@@ -1,5 +1,11 @@
 class PagesController < ApplicationController
-  def home
+  def overview
+  end
+
+  def styling
+  end
+
+  def markup
   end
 
 end

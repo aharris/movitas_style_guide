@@ -7,6 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <ul class="navigation">
+    <li>
+      <%= link_to "Overview", overview_path %>
+    </li>
+    <li>
+      <%= link_to "Styling(CSS)", styling_path %>
+    </li>
+    <li>
+      <%= link_to "Markup(HTML)", markup_path %>
+    </li>
+  </ul>
 
 <%= yield %>
 
