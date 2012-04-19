@@ -7,17 +7,24 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <ul class="navigation">
-    <li>
-      <%= link_to_unless_current "Overview", overview_path %>
-    </li>
-    <li>
-      <%= link_to_unless_current "Styling(CSS)", styling_path %>
-    </li>
-    <li>
-      <%= link_to_unless_current "Markup(HTML)", markup_path %>
-    </li>
-  </ul>
+  <header>
+    <div id="header">
+      <div id="logo">
+        Movitas
+      </div>
+      <ul class="navigation">
+        <li>
+          <%= link_to_unless_current "Overview", overview_path %>
+        </li>
+        <li>
+          <%= link_to_unless_current "Styling(CSS)", styling_path %>
+        </li>
+        <li>
+          <%= link_to_unless_current "Markup(HTML)", markup_path %>
+        </li>
+      </ul>
+      </div>
+  </header>
 
 <%= yield %>
 
