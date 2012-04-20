@@ -6,4 +6,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require xregexp
+//= require shCore
+//= require shBrushJScript
+//= require shBrushCss
+//= require shBrushSass
 //= require_tree .
+
+
