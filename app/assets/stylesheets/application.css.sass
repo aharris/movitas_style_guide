@@ -79,6 +79,28 @@ h4
   font-size: 20px
   margin: 0 0 15px
 
+//BUTTONS
+.button
+  +background-image(linear-gradient(#b5c034, darken(#b5c034, 5%)))
+  display: block
+  padding: 10px 20px
+  color: #fff
+  text-shadow: -1px -1px 1px darken(#b5c034, 5%), 1px 1px 1px lighten(#b5c034, 5%)
+  max-width: 250px
+  text-align: center
+  +box-shadow(1px 1px 1px lighten(#000, 50%), 0 -2px 0px 0 darken(#b5c034, 25%) inset)
+  +border-radius(3px)
+  font-weight: 600
+  margin: 0 auto 50px
+  @media screen and (min-width: 481px)
+    margin: 0 0 50px
+  &:hover
+    color: #fff
+    +box-shadow(1px 1px 1px lighten(#000, 75%), 0 -1px 0px 0 darken(#b5c034, 15%) inset)
+  &:active
+    color: #fff
+    +box-shadow(1px 1px 1px 0 darken(#b5c034, 15%) inset)
+
 //CONTENT
 .container
   max-width: 1000px

@@ -23,12 +23,15 @@
         <ul class="navigation">
           <li>
             <%= link_to_unless_current "Overview", overview_path %>
-          </li><li>
+          </li>
+          <li>
             <%= link_to_unless_current "Branding", branding_path %>
-          </li><li>
-            <%= link_to_unless_current "Markup(HTML)", markup_path %>
-          </li><li>
+          </li>
+          <li>
             <%= link_to_unless_current "Styling(CSS)", styling_path %>
+          </li>
+          <li>
+            <%= link_to_unless_current "Markup(HTML)", markup_path %>
           </li>
         </ul>
       </div>
