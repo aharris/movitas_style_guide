@@ -87,7 +87,9 @@ h4
 
 .content
   background: #FCFCFC
-  padding: 25px
+  padding: 10px
+  @media screen and (min-width: 481px)
+    padding: 25px
   +border-radius(10px)
   
 .section
@@ -126,11 +128,11 @@ ul.navigation
   margin: 0
   list-style: none
   li
-    padding: 0 5% 0 0
+    padding: 0 5% 10px 0
     +inline-block
     color: #fff
-    @media screen and (max-width: 480px)
-      padding: 0 5% 10px 0
+    @media screen and (min-width: 481px)
+      padding: 0 5% 0 0
     a
       color: $linkColor
       text-decoration: none
