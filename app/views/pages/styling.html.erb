@@ -23,7 +23,7 @@
   <div class="section">
     <h3>Naming Conventions</h3>
     <h4>camelCase</h4>
-    <p>camelCase, also known as lower camelCase, should be used for all id's and classes</p>
+    <p>camelCase, also known as lower camelCase, should be used for all id's and classes.</p>
     <h5>Example</h5>
     <pre class="brush: sass">
     .contentWrap
@@ -37,5 +37,49 @@
     .content-wrap
       //styles here
     </pre>
+    <p class="note">*All css is written in SASS, which brings us to our next topic...</p>
+    <h4>Rules</h4>
+    <p>Think about long term maintanence when naming classes.</p>
+    <p>Always describe classes and id's based on what the are not what they look like.</p>
+    <h5>Example:</h5>
+    <pre class="brush: sass">
+      class="warning"
+    </pre>
+    <h5>Not:</h5>
+    <pre class="brush: sass">
+      class="red"
+    </pre>
+  </div>
+  <a name="sass"></a>
+  <div class="section">
+    <h3>SASS</h3>
+    <p>We use <a href="http://sass-lang.com/" target="_blank">SASS</a> with <a href="http://compass-style.org/" target="_blank">Compass</a> to precompile CSS.</p>
+    <h4>With great power comes great responsibility.</h4>
+    <p>Do not nest more than three levels down to make your code more readable.</p>
+    <pre class="brush: sass">
+    .contentWrap
+      //Style here
+      .content
+        //style here
+        .section
+          //STOP!
+    </pre>
+    <p>For more information and references visit: <a href="http://sass-lang.com/" target="_blank">sass-lang.com</a> or <a href="http://compass-style.org/" target="_blank">compass-style.org</a></p>
+  </div>
+  <a name="do_nots"></a>
+  <div class="section">
+    <h3>Do Nots</h3>
+    <h4>Do not use !important</h4>
+      <ul>
+        <li>!important is a band-aid.</li>
+        <li>It is a solution that has not fixed the problem.</li>
+        <li>If you find yourself needing to write !important on something it is probably not classified correctly in the html or their is CSS that does not belong in the common.</li>
+      </ul>
+    <h4>Do not give different id's to the same element on different pages.</h4>
+    <ul>
+      <li>Give them a universal class.</li>
+      <li>Creating multiple id's just created unnecessary code for everyone and becomes a nightmare for maintainability.</li> 
+    </ul>
+    </ul>
   </div>
 </div>
