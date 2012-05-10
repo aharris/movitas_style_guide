@@ -51,5 +51,31 @@
       <li>Do not create extra html when you do not have to.</li>
       <li>Do not put text in ALL CAPS, that can be done with css if necessary.</li> 
     </ul>
+    <h4>Do not do:</h4>
+    <pre class="brush: plain">
+      &lt;div style="clear:both;">&lt;/div>
+    </pre>
+    <h4>Instead do</h4>
+    <pre class="brush: sass">
+      //Mixins
+      @mixin clearAfter
+        &:after
+          content: "\0020"
+          display: block
+          height: 0
+          clear: both
+          overflow: hidden
+          visibility: hidden
+
+      .clearAfter
+        +clearAfter
+    </pre>
+    <p>So in you html you can just add:</p>
+    <pre class="brush: plain">
+      &lt;div class="clearAfter;">
+        &lt;!--Content-->
+      &lt;/div>
+    </pre>
+    <p>This method requires no extra markup</p>
   </div>
 </div>
