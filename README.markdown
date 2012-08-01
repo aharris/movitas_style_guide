@@ -2,4 +2,4 @@
 
 ##Style Guide
 
-<a href="http://www.movitas.com" target="_blank">movitas.com</a>
+<a href="http://movitasstyleguide.herokuapp.com/" target="_blank">movitasstyleguide.herokuapp.com/</a>
